@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Chat View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ChatViewController" customModule="HipchatDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="82e-2Z-ebJ" userLabel="inputTextfield">
+                                <rect key="frame" x="20" y="40" width="463" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXM-yZ-uVD" userLabel="convertToJSONButton">
+                                <rect key="frame" x="503" y="41" width="77" height="27"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.77612581833720329" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="hm0-D3-ihE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Get JSON">
+                                    <color key="titleColor" red="0.99064555919999997" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oK6-i6-fBO"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9sw-aZ-HKY" userLabel="returnTextView">
+                                <rect key="frame" x="20" y="100" width="560" height="480"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.39215686274509803" alpha="0.69834776182432434" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cKV-se-Tsb">
+                                <rect key="frame" x="281.5" y="281.5" width="37" height="37"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81928453947368418" green="0.93061266447368418" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nXM-yZ-uVD" firstAttribute="leading" secondItem="82e-2Z-ebJ" secondAttribute="trailing" constant="20" id="0CY-xp-fvx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9sw-aZ-HKY" secondAttribute="bottom" constant="20" id="GhM-yz-kfA"/>
+                            <constraint firstItem="82e-2Z-ebJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Kfp-2c-JgI"/>
+                            <constraint firstItem="82e-2Z-ebJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="LvH-fD-OBN"/>
+                            <constraint firstItem="9sw-aZ-HKY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="PLl-0d-pR0"/>
+                            <constraint firstItem="9sw-aZ-HKY" firstAttribute="top" secondItem="82e-2Z-ebJ" secondAttribute="bottom" constant="30" id="SEM-PW-cCm"/>
+                            <constraint firstItem="nXM-yZ-uVD" firstAttribute="centerY" secondItem="82e-2Z-ebJ" secondAttribute="centerY" id="XL2-pl-hAs"/>
+                            <constraint firstAttribute="trailing" secondItem="nXM-yZ-uVD" secondAttribute="trailing" constant="20" id="dUl-4D-GG1"/>
+                            <constraint firstItem="cKV-se-Tsb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jX2-vS-Jy8"/>
+                            <constraint firstItem="cKV-se-Tsb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kb9-CK-0A7"/>
+                            <constraint firstAttribute="trailing" secondItem="9sw-aZ-HKY" secondAttribute="trailing" constant="20" id="mkQ-uZ-KA3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="convertButton" destination="nXM-yZ-uVD" id="0dz-xX-4sp"/>
+                        <outlet property="inputTextfield" destination="82e-2Z-ebJ" id="stV-2U-6Lt"/>
+                        <outlet property="progressIndicator" destination="cKV-se-Tsb" id="UBb-bJ-Pz7"/>
+                        <outlet property="returnTextView" destination="9sw-aZ-HKY" id="saq-cx-GbZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="312"/>
+        </scene>
+    </scenes>
+</document>

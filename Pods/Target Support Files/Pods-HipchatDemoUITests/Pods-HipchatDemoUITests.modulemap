@@ -1,0 +1,6 @@
+framework module Pods_HipchatDemoUITests {
+  umbrella header "Pods-HipchatDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

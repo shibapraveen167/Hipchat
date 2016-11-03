@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B431E561D5CB124001831DD /* ChatLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E3671D5C3F76002E4DC0 /* ChatLink.swift */; };
+		0B431E571D5CB129001831DD /* ChatToJSONBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E3691D5C60B2002E4DC0 /* ChatToJSONBuilder.swift */; };
+		0B431E581D5CB210001831DD /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E3631D5C0E3C002E4DC0 /* Chat.swift */; };
+		0B527D081D5AEAFE0015E83F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B527D071D5AEAFE0015E83F /* AppDelegate.swift */; };
+		0B527D0F1D5AEAFE0015E83F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B527D0E1D5AEAFE0015E83F /* Assets.xcassets */; };
+		0B527D121D5AEAFE0015E83F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B527D101D5AEAFE0015E83F /* LaunchScreen.storyboard */; };
+		0B527D1D1D5AEAFE0015E83F /* HipchatDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B527D1C1D5AEAFE0015E83F /* HipchatDemoTests.swift */; };
+		0B527D281D5AEAFE0015E83F /* HipchatDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B527D271D5AEAFE0015E83F /* HipchatDemoUITests.swift */; };
+		0B527D3B1D5AECE80015E83F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B527D371D5AECE80015E83F /* ChatViewController.swift */; };
+		0B527D3C1D5AECE80015E83F /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B527D3A1D5AECE80015E83F /* Chat.storyboard */; };
+		0B527D401D5B345A0015E83F /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B527D3F1D5B345A0015E83F /* StringExtensions.swift */; };
+		0BD4E3601D5C0C84002E4DC0 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E35F1D5C0C84002E4DC0 /* ChatManager.swift */; };
+		0BD4E3621D5C0CD6002E4DC0 /* HTMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E3611D5C0CD6002E4DC0 /* HTMLService.swift */; };
+		0BD4E3641D5C0E3C002E4DC0 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E3631D5C0E3C002E4DC0 /* Chat.swift */; };
+		0BD4E3681D5C3F76002E4DC0 /* ChatLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E3671D5C3F76002E4DC0 /* ChatLink.swift */; };
+		0BD4E36A1D5C60B2002E4DC0 /* ChatToJSONBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E3691D5C60B2002E4DC0 /* ChatToJSONBuilder.swift */; };
+		0BD4E36D1D5C6115002E4DC0 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4E36C1D5C6115002E4DC0 /* StringExtensionsTests.swift */; };
+		0BD4E36E1D5C63D0002E4DC0 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B527D3F1D5B345A0015E83F /* StringExtensions.swift */; };
+		50777C70281B2AF79F4A0F4D /* Pods_HipchatDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740A6E050E9A242F1BE4E8BA /* Pods_HipchatDemoUITests.framework */; };
+		B0EFDFD1F1D980F923A30CB2 /* Pods_HipchatDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FCFBD36EFFEF21584C4DCF /* Pods_HipchatDemo.framework */; };
+		D0DBE14AFBD318E7B83B389D /* Pods_HipchatDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8A4EB7FD2052596DD5A469 /* Pods_HipchatDemoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B527D191D5AEAFE0015E83F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B527CFC1D5AEAFE0015E83F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B527D031D5AEAFE0015E83F;
+			remoteInfo = HipchatDemo;
+		};
+		0B527D241D5AEAFE0015E83F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B527CFC1D5AEAFE0015E83F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B527D031D5AEAFE0015E83F;
+			remoteInfo = HipchatDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B527D041D5AEAFE0015E83F /* HipchatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HipchatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B527D071D5AEAFE0015E83F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B527D0E1D5AEAFE0015E83F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B527D111D5AEAFE0015E83F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B527D131D5AEAFE0015E83F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B527D181D5AEAFE0015E83F /* HipchatDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HipchatDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B527D1C1D5AEAFE0015E83F /* HipchatDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HipchatDemoTests.swift; sourceTree = "<group>"; };
+		0B527D1E1D5AEAFE0015E83F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B527D231D5AEAFE0015E83F /* HipchatDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HipchatDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B527D271D5AEAFE0015E83F /* HipchatDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HipchatDemoUITests.swift; sourceTree = "<group>"; };
+		0B527D291D5AEAFE0015E83F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B527D371D5AECE80015E83F /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		0B527D3A1D5AECE80015E83F /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		0B527D3F1D5B345A0015E83F /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		0BD4E35F1D5C0C84002E4DC0 /* ChatManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		0BD4E3611D5C0CD6002E4DC0 /* HTMLService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLService.swift; sourceTree = "<group>"; };
+		0BD4E3631D5C0E3C002E4DC0 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		0BD4E3671D5C3F76002E4DC0 /* ChatLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatLink.swift; sourceTree = "<group>"; };
+		0BD4E3691D5C60B2002E4DC0 /* ChatToJSONBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatToJSONBuilder.swift; sourceTree = "<group>"; };
+		0BD4E36C1D5C6115002E4DC0 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
+		3C62E28EBB2A30649EF3C1D2 /* Pods-HipchatDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HipchatDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HipchatDemoTests/Pods-HipchatDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		4783E382837DA11E9DC11427 /* Pods-HipchatDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HipchatDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HipchatDemoUITests/Pods-HipchatDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		55973ECFCC8004900FD97669 /* Pods-HipchatDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HipchatDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HipchatDemo/Pods-HipchatDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6042FA36885FEB5A04137CD0 /* Pods-HipchatDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HipchatDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HipchatDemoTests/Pods-HipchatDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		740A6E050E9A242F1BE4E8BA /* Pods_HipchatDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HipchatDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A8A4EB7FD2052596DD5A469 /* Pods_HipchatDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HipchatDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90FCFBD36EFFEF21584C4DCF /* Pods_HipchatDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HipchatDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03D09B29FA09654A22C8D74 /* Pods-HipchatDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HipchatDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HipchatDemoUITests/Pods-HipchatDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDC875F8A8442AA109E29738 /* Pods-HipchatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HipchatDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HipchatDemo/Pods-HipchatDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B527D011D5AEAFE0015E83F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0EFDFD1F1D980F923A30CB2 /* Pods_HipchatDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B527D151D5AEAFE0015E83F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0DBE14AFBD318E7B83B389D /* Pods_HipchatDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B527D201D5AEAFE0015E83F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50777C70281B2AF79F4A0F4D /* Pods_HipchatDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B527CFB1D5AEAFE0015E83F = {
+			isa = PBXGroup;
+			children = (
+				0B527D061D5AEAFE0015E83F /* HipchatDemo */,
+				0B527D1B1D5AEAFE0015E83F /* HipchatDemoTests */,
+				0B527D261D5AEAFE0015E83F /* HipchatDemoUITests */,
+				0B527D051D5AEAFE0015E83F /* Products */,
+				314FFF427B10DD6037AF56A7 /* Pods */,
+				ABA59967CCEF39D014D19682 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0B527D051D5AEAFE0015E83F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B527D041D5AEAFE0015E83F /* HipchatDemo.app */,
+				0B527D181D5AEAFE0015E83F /* HipchatDemoTests.xctest */,
+				0B527D231D5AEAFE0015E83F /* HipchatDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B527D061D5AEAFE0015E83F /* HipchatDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0B527D071D5AEAFE0015E83F /* AppDelegate.swift */,
+				0B527D0E1D5AEAFE0015E83F /* Assets.xcassets */,
+				0B527D351D5AECE80015E83F /* Chat */,
+				0B527D131D5AEAFE0015E83F /* Info.plist */,
+				0B527D101D5AEAFE0015E83F /* LaunchScreen.storyboard */,
+				0B527D3E1D5B34410015E83F /* Utility */,
+			);
+			path = HipchatDemo;
+			sourceTree = "<group>";
+		};
+		0B527D1B1D5AEAFE0015E83F /* HipchatDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B527D1C1D5AEAFE0015E83F /* HipchatDemoTests.swift */,
+				0B527D1E1D5AEAFE0015E83F /* Info.plist */,
+			);
+			path = HipchatDemoTests;
+			sourceTree = "<group>";
+		};
+		0B527D261D5AEAFE0015E83F /* HipchatDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B527D271D5AEAFE0015E83F /* HipchatDemoUITests.swift */,
+				0B527D291D5AEAFE0015E83F /* Info.plist */,
+			);
+			path = HipchatDemoUITests;
+			sourceTree = "<group>";
+		};
+		0B527D351D5AECE80015E83F /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				0B527D361D5AECE80015E83F /* Controller */,
+				0B527D381D5AECE80015E83F /* Model */,
+				0BD4E36B1D5C60E3002E4DC0 /* Tests */,
+				0B527D391D5AECE80015E83F /* View */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		0B527D361D5AECE80015E83F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B527D371D5AECE80015E83F /* ChatViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0B527D381D5AECE80015E83F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BD4E3691D5C60B2002E4DC0 /* ChatToJSONBuilder.swift */,
+				0BD4E3631D5C0E3C002E4DC0 /* Chat.swift */,
+				0BD4E3671D5C3F76002E4DC0 /* ChatLink.swift */,
+				0BD4E35F1D5C0C84002E4DC0 /* ChatManager.swift */,
+				0BD4E3611D5C0CD6002E4DC0 /* HTMLService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0B527D391D5AECE80015E83F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B527D3A1D5AECE80015E83F /* Chat.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0B527D3E1D5B34410015E83F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0B527D3F1D5B345A0015E83F /* StringExtensions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		0BD4E36B1D5C60E3002E4DC0 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0BD4E36C1D5C6115002E4DC0 /* StringExtensionsTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		314FFF427B10DD6037AF56A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55973ECFCC8004900FD97669 /* Pods-HipchatDemo.debug.xcconfig */,
+				FDC875F8A8442AA109E29738 /* Pods-HipchatDemo.release.xcconfig */,
+				6042FA36885FEB5A04137CD0 /* Pods-HipchatDemoTests.debug.xcconfig */,
+				3C62E28EBB2A30649EF3C1D2 /* Pods-HipchatDemoTests.release.xcconfig */,
+				A03D09B29FA09654A22C8D74 /* Pods-HipchatDemoUITests.debug.xcconfig */,
+				4783E382837DA11E9DC11427 /* Pods-HipchatDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ABA59967CCEF39D014D19682 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90FCFBD36EFFEF21584C4DCF /* Pods_HipchatDemo.framework */,
+				7A8A4EB7FD2052596DD5A469 /* Pods_HipchatDemoTests.framework */,
+				740A6E050E9A242F1BE4E8BA /* Pods_HipchatDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B527D031D5AEAFE0015E83F /* HipchatDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B527D2C1D5AEAFE0015E83F /* Build configuration list for PBXNativeTarget "HipchatDemo" */;
+			buildPhases = (
+				8E2D42AA30DC3D882D02079E /* 📦 Check Pods Manifest.lock */,
+				0B527D001D5AEAFE0015E83F /* Sources */,
+				0B527D011D5AEAFE0015E83F /* Frameworks */,
+				0B527D021D5AEAFE0015E83F /* Resources */,
+				1ECACD167059ABB2201D65CD /* 📦 Embed Pods Frameworks */,
+				4F4100F71E6618931131A0EE /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HipchatDemo;
+			productName = HipchatDemo;
+			productReference = 0B527D041D5AEAFE0015E83F /* HipchatDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B527D171D5AEAFE0015E83F /* HipchatDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B527D2F1D5AEAFE0015E83F /* Build configuration list for PBXNativeTarget "HipchatDemoTests" */;
+			buildPhases = (
+				3515A31DAF99FAD6A717C107 /* 📦 Check Pods Manifest.lock */,
+				0B527D141D5AEAFE0015E83F /* Sources */,
+				0B527D151D5AEAFE0015E83F /* Frameworks */,
+				0B527D161D5AEAFE0015E83F /* Resources */,
+				13CD03C11D64217803FCF404 /* 📦 Embed Pods Frameworks */,
+				B2ABC2F9B983085E7B82C64C /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B527D1A1D5AEAFE0015E83F /* PBXTargetDependency */,
+			);
+			name = HipchatDemoTests;
+			productName = HipchatDemoTests;
+			productReference = 0B527D181D5AEAFE0015E83F /* HipchatDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B527D221D5AEAFE0015E83F /* HipchatDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B527D321D5AEAFE0015E83F /* Build configuration list for PBXNativeTarget "HipchatDemoUITests" */;
+			buildPhases = (
+				1A07869BF7AB2C95C234D22F /* 📦 Check Pods Manifest.lock */,
+				0B527D1F1D5AEAFE0015E83F /* Sources */,
+				0B527D201D5AEAFE0015E83F /* Frameworks */,
+				0B527D211D5AEAFE0015E83F /* Resources */,
+				ABB94121A3E704B85E200288 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B527D251D5AEAFE0015E83F /* PBXTargetDependency */,
+			);
+			name = HipchatDemoUITests;
+			productName = HipchatDemoUITests;
+			productReference = 0B527D231D5AEAFE0015E83F /* HipchatDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B527CFC1D5AEAFE0015E83F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Shiba Praveen";
+				TargetAttributes = {
+					0B527D031D5AEAFE0015E83F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					0B527D171D5AEAFE0015E83F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 0B527D031D5AEAFE0015E83F;
+					};
+					0B527D221D5AEAFE0015E83F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 0B527D031D5AEAFE0015E83F;
+					};
+				};
+			};
+			buildConfigurationList = 0B527CFF1D5AEAFE0015E83F /* Build configuration list for PBXProject "HipchatDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B527CFB1D5AEAFE0015E83F;
+			productRefGroup = 0B527D051D5AEAFE0015E83F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B527D031D5AEAFE0015E83F /* HipchatDemo */,
+				0B527D171D5AEAFE0015E83F /* HipchatDemoTests */,
+				0B527D221D5AEAFE0015E83F /* HipchatDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B527D021D5AEAFE0015E83F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B527D3C1D5AECE80015E83F /* Chat.storyboard in Resources */,
+				0B527D121D5AEAFE0015E83F /* LaunchScreen.storyboard in Resources */,
+				0B527D0F1D5AEAFE0015E83F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B527D161D5AEAFE0015E83F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B527D211D5AEAFE0015E83F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13CD03C11D64217803FCF404 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HipchatDemoTests/Pods-HipchatDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A07869BF7AB2C95C234D22F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1ECACD167059ABB2201D65CD /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HipchatDemo/Pods-HipchatDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3515A31DAF99FAD6A717C107 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4F4100F71E6618931131A0EE /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HipchatDemo/Pods-HipchatDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E2D42AA30DC3D882D02079E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ABB94121A3E704B85E200288 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HipchatDemoUITests/Pods-HipchatDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2ABC2F9B983085E7B82C64C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HipchatDemoTests/Pods-HipchatDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B527D001D5AEAFE0015E83F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BD4E3621D5C0CD6002E4DC0 /* HTMLService.swift in Sources */,
+				0BD4E3601D5C0C84002E4DC0 /* ChatManager.swift in Sources */,
+				0BD4E3641D5C0E3C002E4DC0 /* Chat.swift in Sources */,
+				0B527D3B1D5AECE80015E83F /* ChatViewController.swift in Sources */,
+				0B527D081D5AEAFE0015E83F /* AppDelegate.swift in Sources */,
+				0B527D401D5B345A0015E83F /* StringExtensions.swift in Sources */,
+				0BD4E36A1D5C60B2002E4DC0 /* ChatToJSONBuilder.swift in Sources */,
+				0BD4E3681D5C3F76002E4DC0 /* ChatLink.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B527D141D5AEAFE0015E83F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B431E561D5CB124001831DD /* ChatLink.swift in Sources */,
+				0BD4E36E1D5C63D0002E4DC0 /* StringExtensions.swift in Sources */,
+				0B431E581D5CB210001831DD /* Chat.swift in Sources */,
+				0B431E571D5CB129001831DD /* ChatToJSONBuilder.swift in Sources */,
+				0B527D1D1D5AEAFE0015E83F /* HipchatDemoTests.swift in Sources */,
+				0BD4E36D1D5C6115002E4DC0 /* StringExtensionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B527D1F1D5AEAFE0015E83F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B527D281D5AEAFE0015E83F /* HipchatDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B527D1A1D5AEAFE0015E83F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B527D031D5AEAFE0015E83F /* HipchatDemo */;
+			targetProxy = 0B527D191D5AEAFE0015E83F /* PBXContainerItemProxy */;
+		};
+		0B527D251D5AEAFE0015E83F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B527D031D5AEAFE0015E83F /* HipchatDemo */;
+			targetProxy = 0B527D241D5AEAFE0015E83F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B527D101D5AEAFE0015E83F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B527D111D5AEAFE0015E83F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B527D2A1D5AEAFE0015E83F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0B527D2B1D5AEAFE0015E83F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B527D2D1D5AEAFE0015E83F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55973ECFCC8004900FD97669 /* Pods-HipchatDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HipchatDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HipchatDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0B527D2E1D5AEAFE0015E83F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDC875F8A8442AA109E29738 /* Pods-HipchatDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HipchatDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HipchatDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0B527D301D5AEAFE0015E83F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6042FA36885FEB5A04137CD0 /* Pods-HipchatDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HipchatDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HipchatDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HipchatDemo.app/HipchatDemo";
+			};
+			name = Debug;
+		};
+		0B527D311D5AEAFE0015E83F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C62E28EBB2A30649EF3C1D2 /* Pods-HipchatDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HipchatDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HipchatDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HipchatDemo.app/HipchatDemo";
+			};
+			name = Release;
+		};
+		0B527D331D5AEAFE0015E83F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A03D09B29FA09654A22C8D74 /* Pods-HipchatDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = HipchatDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HipchatDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HipchatDemo;
+			};
+			name = Debug;
+		};
+		0B527D341D5AEAFE0015E83F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4783E382837DA11E9DC11427 /* Pods-HipchatDemoUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = HipchatDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HipchatDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HipchatDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B527CFF1D5AEAFE0015E83F /* Build configuration list for PBXProject "HipchatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B527D2A1D5AEAFE0015E83F /* Debug */,
+				0B527D2B1D5AEAFE0015E83F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B527D2C1D5AEAFE0015E83F /* Build configuration list for PBXNativeTarget "HipchatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B527D2D1D5AEAFE0015E83F /* Debug */,
+				0B527D2E1D5AEAFE0015E83F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B527D2F1D5AEAFE0015E83F /* Build configuration list for PBXNativeTarget "HipchatDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B527D301D5AEAFE0015E83F /* Debug */,
+				0B527D311D5AEAFE0015E83F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B527D321D5AEAFE0015E83F /* Build configuration list for PBXNativeTarget "HipchatDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B527D331D5AEAFE0015E83F /* Debug */,
+				0B527D341D5AEAFE0015E83F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B527CFC1D5AEAFE0015E83F /* Project object */;
+}
